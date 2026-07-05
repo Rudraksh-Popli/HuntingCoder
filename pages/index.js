@@ -24,49 +24,41 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Script src="/sc.js" strategy="lazyOnload"></Script>
+            {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
             <div
                 className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
             >
                 <main className={styles.main}>
-                    <Image
-                        className={styles.logo}
-                        src="/next.svg"
-                        alt="Next.js logo"
-                        width={100}
-                        height={20}
-                        priority
-                    />
+                    <nav className={styles.mainnav}>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </nav>
                     <div className={styles.intro}>
                         <h1>Hunting Coder</h1>
                         <p>
                             A Blog For The Hunting Coders By A Hunting Coder
                         </p>
-                    </div>
-                    <div className={styles.ctas}>
-                        <a
-                            className={styles.primary}
-                            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                className={styles.logo}
-                                src="/vercel.svg"
-                                alt="Vercel logomark"
-                                width={16}
-                                height={16}
-                            />
-                            Deploy Now
-                        </a>
-                        <a
-                            className={styles.secondary}
-                            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Documentation
-                        </a>
+                        <h2>Popular Blogs</h2>
+                        <div className="blogItem">
+                            <h3>How to Learn JavaScript in 2026</h3>
+                            <p>JavaScript is the language used to design logic for the web</p>
+                        </div>
+                        <div className="blogItem">
+                            <h3>How to Learn JavaScript in 2026</h3>
+                            <p>JavaScript is the language used to design logic for the web</p>
+                        </div>
+                        <div className="blogItem">
+                            <h3>How to Learn JavaScript in 2026</h3>
+                            <p>JavaScript is the language used to design logic for the web</p>
+                        </div>
+                        <div className="blogItem">
+                            <h3>How to Learn JavaScript in 2026</h3>
+                            <p>JavaScript is the language used to design logic for the web</p>
+                        </div>
                     </div>
                 </main>
             </div>
