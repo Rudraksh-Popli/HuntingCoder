@@ -1,12 +1,8 @@
 import Head from "next/head";
-// import Script from "next/script";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-// import styles1 from "@/styles/Home1.module.css";
-// import styles2 from "@/styles/Home2.module.css";
-import Dummy from "@/components/Dummy"
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -19,14 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export default function Home() {
-    // console.log(styles);
     return (
         <>
-            <Dummy />
             <style jsx>
                 {`
-                    .mySpan {
-                        color: red;
+                    h2 {
+                        font-size: 30px;
+                    }
+                    h3 {
+                        font-size: 20px;
                     }
                 `}
             </style>
@@ -37,7 +34,6 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
             <div
                 className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
             >
@@ -60,8 +56,9 @@ export default function Home() {
                     </nav>
                     <div className={styles.intro}>
                         <h1>
-                            <span className="mySpan dummy">Hunting Coder</span>
+                            <span>Hunting Coder</span>
                         </h1>
+                        <Image className={styles.myImg} alt="A Coder" src="/home_img.jpg" width={300} height={200} />
                         <p>
                             A Blog For The Hunting Coders By A Hunting Coder
                         </p>
