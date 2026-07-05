@@ -1,9 +1,11 @@
 import Head from "next/head";
-import Script from "next/script";
-import Image from "next/image";
+// import Script from "next/script";
+// import Image from "next/image";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+// import styles1 from "@/styles/Home1.module.css";
+// import styles2 from "@/styles/Home2.module.css";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -16,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export default function Home() {
+    // console.log(styles);
     return (
         <>
             <Head>
