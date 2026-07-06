@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -38,22 +37,6 @@ export default function Home() {
                 className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
             >
                 <main className={styles.main}>
-                    <nav className={styles.mainnav}>
-                        <ul>
-                            <Link href="/">
-                                <li>Home</li>
-                            </Link>
-                            <Link href="/about">
-                                <li>About</li>
-                            </Link>
-                            <Link href="/blog">
-                                <li>Blog</li>
-                            </Link>
-                            <Link href="/contact">
-                                <li>Contact Us</li>
-                            </Link>
-                        </ul>
-                    </nav>
                     <div className={styles.intro}>
                         <h1>
                             <span>Hunting Coder</span>
@@ -62,7 +45,7 @@ export default function Home() {
                         <p>
                             A Blog For The Hunting Coders By A Hunting Coder
                         </p>
-                        <h2>Popular Blogs</h2>
+                        <h2>Latest Blogs</h2>
                         <div className="blogItem">
                             <h3>How to Learn JavaScript in 2026</h3>
                             <p>JavaScript is the language used to design logic for the web</p>
