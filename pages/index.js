@@ -45,23 +45,6 @@ export default function Home() {
                         <p>
                             A Blog For The Hunting Coders By A Hunting Coder
                         </p>
-                        <h2>Latest Blogs</h2>
-                        <div className="blogItem">
-                            <h3>How to Learn JavaScript in 2026</h3>
-                            <p>JavaScript is the language used to design logic for the web</p>
-                        </div>
-                        <div className="blogItem">
-                            <h3>How to Learn JavaScript in 2026</h3>
-                            <p>JavaScript is the language used to design logic for the web</p>
-                        </div>
-                        <div className="blogItem">
-                            <h3>How to Learn JavaScript in 2026</h3>
-                            <p>JavaScript is the language used to design logic for the web</p>
-                        </div>
-                        <div className="blogItem">
-                            <h3>How to Learn JavaScript in 2026</h3>
-                            <p>JavaScript is the language used to design logic for the web</p>
-                        </div>
                     </div>
                 </main>
             </div>
