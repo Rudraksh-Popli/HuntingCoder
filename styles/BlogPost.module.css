@@ -1,3 +1,7 @@
+.container {
+    padding: 0 10rem;
+}
+
 .main {
     min-height: 100vh;
     flex: 1;
@@ -7,12 +11,4 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 3rem;
-}
-
-.blogItem {
-    margin-bottom: 50px;
-}
-
-.container {
-    padding: 0 2rem;
 }

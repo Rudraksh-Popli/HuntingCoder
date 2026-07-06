@@ -10,18 +10,22 @@ const Blog = () => {
                     <Link href={'blogpost/learn-javascript'}>
                         <h3>How to Learn JavaScript in 2026</h3>
                     </Link>
+                    <br />
                     <p>JavaScript is the language used to design logic for the web</p>
                 </div>
                 <div className={styles.blogItem}>
                     <h3>How to Learn JavaScript in 2026</h3>
+                    <br />
                     <p>JavaScript is the language used to design logic for the web</p>
                 </div>
                 <div className={styles.blogItem}>
                     <h3>How to Learn JavaScript in 2026</h3>
+                    <br />
                     <p>JavaScript is the language used to design logic for the web</p>
                 </div>
                 <div className={styles.blogItem}>
                     <h3>How to Learn JavaScript in 2026</h3>
+                    <br />
                     <p>JavaScript is the language used to design logic for the web</p>
                 </div>
             </main>
