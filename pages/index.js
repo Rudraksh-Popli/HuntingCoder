@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -41,7 +40,8 @@ export default function Home() {
                         <h1>
                             <span>Hunting Coder</span>
                         </h1>
-                        <Image className={styles.myImg} alt="A Coder" src="/home_img.jpg" width={300} height={200} />
+                        {/* <Image className={styles.myImg} alt="A Coder" src="/home_img.jpg" width={300} height={200} /> */}
+                        <img className={styles.myImg} src="/home_img.jpg" alt="A Coder" width={300} height={200} />
                         <p>
                             A Blog For The Hunting Coders By A Hunting Coder
                         </p>

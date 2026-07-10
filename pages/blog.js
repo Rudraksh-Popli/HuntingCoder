@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from "@/styles/Blog.module.css";
 import Link from 'next/link';
+import fs from 'node:fs';
 
 const Blog = (props) => {
     const [blogs, setBlogs] = useState(props.allBlogs);
@@ -23,11 +24,17 @@ const Blog = (props) => {
     )
 };
 
-export async function getServerSideProps(context) {
-    let data = await fetch("http://localhost:3000/api/getallblogs");
-    let allBlogs = await data.json();
+export async function getStaticProps(context) {
+    let data = await fs.promises.readdir("blogdata");
+    let myBlog;
+    let allBlogs = [];
+    for (let index = 0; index < data.length; index++) {
+        const element = data[index];
+        myBlog = await fs.promises.readFile(`blogdata/${element}`, 'utf-8');
+        allBlogs.push(JSON.parse(myBlog));
+    }
     return {
-        props: {allBlogs},
+        props: { allBlogs },
     }
 }
 
