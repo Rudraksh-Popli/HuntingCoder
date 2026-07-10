@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 const Blog = (props) => {
     const [blogs, setBlogs] = useState(props.allBlogs);
-    console.log(props);
     return (
         <div className={styles.container}>
             <main className={styles.main}>
