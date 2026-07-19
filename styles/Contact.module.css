@@ -1,0 +1,25 @@
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3rem;
+}
+
+.blogItem {
+    margin-bottom: 35px;
+}
+
+.container {
+    padding: 0 10rem;
+}
+
+.mb3 {
+    margin-bottom: 20px;
+}
+
+.formlabel {
+    margin-right: 20px;
+}
